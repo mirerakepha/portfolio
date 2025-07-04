@@ -16,6 +16,7 @@
 
 <style>
     body{
+    font-family: 'Quicksand', sans-serif;';
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -25,14 +26,20 @@
     }
 
     header{
+    padding-top: 20px;
     width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background-color: transparent;
+
     }
+    .social-bar {
+    padding-top: 100px;}
 
     .social-bar a {
             color: white;
@@ -40,6 +47,7 @@
             margin: 0 15px;
             text-decoration: none;
             transition: color 0.3s;
+            padding-top: 100px;
         }
 
         .social-bar a:hover {
@@ -48,6 +56,9 @@
 
     .navbar{
     margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
     width: 40%;
     display: flex;
     align-items: right;
@@ -61,6 +72,11 @@
     }
 
     .navbar a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    justify-content: flex-end;
+    padding-left:30px;
+    padding-top: 10px;
     margin-left: 10px;
     color: white;
     font-size: 24px;
@@ -73,23 +89,36 @@
 
     }
 
+    .navbar a:hover {
+    text-underline-offset: 15px;
+    text-decoration: underline;
+    text-decoration-color: #00ffff;
+    text-decoration-thickness: 3px;
+    color: #00ffff;
+    }
+
     .home-page{
     display: flex;
+    padding-left:100px;
+    padding-right: 50px;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
+    gap:200px;
 
     }
 
     .profile-pic {
             align-content: center;
            width: 450px;
-            height: 450px;
+            height: 600px;
            object-fit: cover;
-           border-radius: 50%;
+           display: inline-block;
             border: 1px solid #333;
            margin-bottom: 1rem;
         }
+    .content-right {
+    justify-content: flex-end;}
 
 
     .content-right h1 {
@@ -100,10 +129,25 @@
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
 
+    section {
+    height: 100vh;
+    }
+
     .section1{
     min-height: 100vh;
 
     }
+
+    .dev {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+
+
+    }
+
+    .devinf {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;}
 
 
 
@@ -139,8 +183,10 @@
             <!--words to the left-->
             <div class="content-right">
                 <h1>Kepha Mirera</h1>
-                <p>FullStack Developer</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias beatae consequatur cum cumque dolorem, ea eius fuga fugiat inventore iure modi odit placeat quos ratione reprehenderit voluptatum? Facere, tenetur!</p>
+                <p class="dev">FullStack Developer</p>
+                <p class="devinf">I build modern, fast, and scalable web applications and android apps from front to back.
+                      With a strong foundation in both frontend and backend technologies, I turn ideas into real-world, user-friendly digital products.
+                </p>
 
                 <!--social buttons at the bottom-->
                 <div class="social-bar" >

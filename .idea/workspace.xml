@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f8759b2-5086-4e64-a3b4-cb8e30b92a99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Templates/assets/css/sections.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/css/sections.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/HOME.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/HOME.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/SKILLS.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/SKILLS.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/sections.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/sections.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
