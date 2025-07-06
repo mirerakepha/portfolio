@@ -9,12 +9,18 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
+    <link rel="icon" href="assets/k.png" type="image/png">
     <link rel="stylesheet" href="assets/css/sections.css">
 
 </head>
 
 <style>
+    html {
+    scroll-behavior: smooth;
+    }
+
+
+
     body{
     font-family: 'Quicksand', sans-serif;';
     margin: 0;
@@ -39,20 +45,30 @@
 
     }
     .social-bar {
-    padding-top: 100px;}
+     display: flex;
+    padding-top: 30px;
+    }
 
     .social-bar a {
-            color: white;
-            font-size: 24px;
-            margin: 0 15px;
-            text-decoration: none;
-            transition: color 0.3s;
-            padding-top: 100px;
-        }
+     transition: transform 0.3s ease, text-shadow 0.3s ease;
+     text-decoration: none;
+     color: white;
+     font-size: 24px;
+     margin: 0 15px;
+     text-decoration: none;
+     transition: color 0.3s;
+     padding-top: 100px;
+     gap:40px;
+     padding:10px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+     }
 
-        .social-bar a:hover {
-            color: #00ccff;
-        }
+     .social-bar a:hover {
+     color: #00bfff;
+     transform: scale(2.3);
+     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+     }
 
     .navbar{
     margin-top: 20px;
@@ -62,8 +78,9 @@
     width: 40%;
     display: flex;
     align-items: right;
-    position: absolute;
+    position: fixed;
     }
+
 
     navbar a:active,
     navbar a:hover {
@@ -86,13 +103,15 @@
     font-weight: 1.8rem;
     font-family: 'Poppins', sans-serif;
     border-bottom: 2px solid transparent;
+    transition: text-shadow 0.1s ease-in-out;
 
     }
 
     .navbar a:hover {
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
     text-underline-offset: 15px;
     text-decoration: underline;
-    text-decoration-color: #00ffff;
+    text-decoration-color: #00bfff;
     text-decoration-thickness: 3px;
     color: #00ffff;
     }
@@ -109,45 +128,182 @@
     }
 
     .profile-pic {
-            align-content: center;
-           width: 450px;
-            height: 600px;
-           object-fit: cover;
-           display: inline-block;
-            border: 1px solid #333;
-           margin-bottom: 1rem;
-        }
+     overflow: hidden;
+     align-content: center;
+     width: 800px;
+     height: 600px;
+     object-fit: cover;
+     display: inline-block;
+     border: 1px solid #333;
+     margin-bottom: 1rem;
+     border-radius: 10px;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+     }
+
+     .profile-pic:hover {
+     box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 40px #00bfff;
+     transition: box-shadow 0.3s ease-in-out;
+     }
+
+
+    .profile {
+    width: 1000px;
+    }
+
+
+
+    .profile img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s ease-in-out;
+    }
+
+    .profile:hover img {
+    transform: scale(1.1);
+
+    }
+
     .content-right {
     justify-content: flex-end;}
 
 
     .content-right h1 {
-            font-size: 4em;
-            font-weight: 800;
-            line-height: 1.2;
-            color: #abe5ef;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #abe5ef;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
 
     section {
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
     height: 100vh;
+    padding-top: 80px;
+    box-sizing: border-box;
+    padding-left: 100px;
     }
 
     .section1{
     min-height: 100vh;
-
     }
 
     .dev {
     font-family: 'Quicksand', sans-serif;
     font-size: 60px;
-
-
     }
 
     .devinf {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;}
+
+    .abouttxt{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    }
+
+    main {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+
+    .about{
+      display: flex;
+      flex-direction: column;
+
+
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .about h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+    .button-container{
+            background-color: rgba(0, 0, 0, 0.5); color: white;
+            padding-top: 25px;
+            padding-left: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #010b12;
+            width: 200px;
+            height: 300px;
+            transition: all 0.6s ease;
+            margin: 20px;
+            border-radius: 10px;
+            text-align-last: left;
+        }
+        .button-container:hover{
+             background-color: #7f8c8d;
+             transform: scale(1.05);
+             box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 40px #00bfff;
+        }
+        .container{
+            padding: 20px;
+            padding-top: 20px;
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            text-align: left;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 4px;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .container2{
+            padding: 20px;
+            padding-top: 20px;
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            text-align: left;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 4px;
+            gap: 30px;
+        }
+
+
+     #home {
+      background-image: url('assets/img/back.jpeg');
+    }
+
+     #about {
+      background-image: url('assets/img/back.jpeg');
+    }
+     #skills {
+      background-image: url('assets/img/back.jpeg');
+    }
+     #resume {
+      background-image: url('assets/img/back.jpeg');
+    }
+     #contact {
+      background-image: url('assets/img/back.jpeg');
+    }
+
+
+
+    #home:target ~ .navbar .nav-link[href="#home"],
+    #about:target ~ .navbar .nav-link[href="#about"],
+    #skills:target ~ .navbar .nav-link[href="#skills"] {
+    #resume:target ~ .navbar .nav-link[href="#resume"] {
+    #contact:target ~ .navbar .nav-link[href="#contact"] {
+    border-bottom: 3px solid #00ffff;
+
+
+
+
+
+
+
 
 
 
@@ -159,24 +315,25 @@
 
 <header>
          <nav class="navbar">
-            <a href="">SKILLS</a>
-            <a href="">RESUME</a>
-            <a href="">ABOUT</a>
-            <a href="">CONTACT</a>
+             <a href="#home" class="nav-link">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#resume" class="nav-link">RESUME</a>
+            <a href="#skills" class="nav-link">SKILLS</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
 
         </nav>
 </header>
 
 <main class="main">
 <!--section1 home-->
-    <section class="section1">
+    <section id="home" class="section1">
 
 
 
         <div class="home-page">
             <!--profile pic to the left-->
             <div class="profile">
-                <img src="assets/img/phh.png" alt="profile pic" class="profile-pic">
+                <img src="assets/img/ke.png" alt="profile pic" class="profile-pic">
 
             </div>
 
@@ -209,7 +366,22 @@
 
 
 <!--section2 About-->
-    <section class="section2">
+    <section id="about" class="section2">
+
+        <div class="about">
+
+
+            <h1>ABOUT ME</h1>
+
+            <div class="abouttxt">
+            <p>Hello! I'm Kepha Mirera, a passionate FullStack Developer. I specialize in creating beautiful and functional websites using modern web technologies.</p>
+            <p>This portfolio showcases some of the projects I've worked on, skills I've acquired, and a bit more about who I am.</p>
+            <p>Feel free to reach out through the contact page if you'd like to collaborate or just say hello!</p>
+            </div>
+        </div>
+
+
+
 
 
     </section>
@@ -219,21 +391,148 @@
 
 
 <!--section3 resume-->
-    <section class="section3"></section>
+    <section id="resume" class="section3"></section>
 <!--end of section3 resume-->
 
 
 
 
 <!--section4 skills-->
-    <section class="section4"></section>
+    <section id="skills" class="section4">
+
+        <div class = "column">
+
+        <div class="container">
+
+
+    <!--Android app development-->
+    <div class="button-container">
+        <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
+        <h4>
+            Android app development
+        </h4>
+        <p>
+            Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
+            applications.
+
+        </p>
+
+    </div>
+
+
+
+<!--Web development-->
+    <div class="button-container">
+        <img src="assets/img/icons8-web-development-48.png" alt="Web Development Icon" class="icon">
+        <h4>
+            Frontend development
+        </h4>
+        <p>
+            Experienced web developer specializing in building responsive, user-friendly websites and web applications.
+        </p>
+
+    </div>
+
+
+
+<!--AI enngineering-->
+    <div class="button-container">
+        <img src="assets/img/icons8-artificial-intelligence-50.png" alt="Web Development Icon" class="icon">
+        <h4>
+            Backend development
+        </h4>
+        <p>
+           AI engineer focused on developing intelligent systems and machine learning solutions to solve real-world problems.
+        </p>
+
+    </div>
+<!--game development-->
+    <div class="button-container">
+
+
+        <img src="assets/img/icons8-game-controller-48%20(1).png" alt="Web Development Icon" class="icon" >
+
+        <h4>
+            Database management
+        </h4>
+        <p>
+            Creative game developer with a passion for designing engaging, interactive experiences across multiple platforms.
+        </p>
+
+    </div>
+</div>
+
+
+        <!--container 2-->
+
+<div class="container2">
+
+    <!--Frontend Development-->
+    <div class="button-container">
+        <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
+        <h4>
+            Web Development
+        </h4>
+        <p>
+            Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
+            applications.
+        </p>
+
+    </div>
+
+
+    <!--Backend development-->
+    <div class="button-container">
+        <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
+        <h4>
+            AI Enginnering
+        </h4>
+        <p>
+            Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
+            applications.
+        </p>
+
+    </div>
+
+
+    <!--database-->
+    <div class="button-container">
+        <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
+        <h4>
+            DevOps
+        </h4>
+        <p>
+            Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
+            applications.
+        </p>
+
+    </div>
+
+
+    <!--DevOps-->
+    <div class="button-container">
+        <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
+        <h4>
+            Unreal Engineering
+        </h4>
+        <p>
+            Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
+            applications.
+        </p>
+
+    </div>
+
+    </div>
+        </div>
+
+    </section>
 <!--end of section4 skills-->
 
 
 
 
 <!--section5 contact-->
-    <section class="section5"></section>
+    <section id="contact" class="section5"></section>
 <!--end of section5 contact-->
 
 </main>
