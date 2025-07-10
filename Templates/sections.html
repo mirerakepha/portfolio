@@ -272,6 +272,197 @@
         }
 
 
+
+       .contact-section {
+            height: 100vh; /* Exactly 100% of the viewport height */
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Arrange children vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+            overflow: hidden; /* Hide any overflow from the section itself */
+            padding: 2rem 0; /* Add vertical padding to ensure content isn't squished at edges */
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem; /* Horizontal padding for content within the container */
+            box-sizing: border-box;
+            /* Removed flex-grow and overflow-y: auto as content should fit without scrolling now */
+        }
+
+        /* Header Section */
+        .header-section {
+            margin-bottom: 2rem;
+            text-align: left; /* Align header text to the left */
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        /* Main Content Grid */
+        .main-content-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default */
+            gap: 2rem; /* Gap between columns/rows */
+            margin-top: 2rem;
+        }
+
+        /* Info Cards - now translucent */
+        .info-card {
+            background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-icon {
+            background-color: #e0f2f7; /* Light blue */
+            color: #007bff; /* Darker blue */
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+            margin-right: 1rem;
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+
+        .info-text h3 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+            font-size: 1.1rem;
+        }
+
+        .info-text p {
+            color: #666;
+            font-size: 0.95rem;
+            word-break: break-word; /* Allow long words to break */
+        }
+
+        /* Form Card - now translucent */
+        .form-card {
+            background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-top: 2rem; /* Space above the form on small screens */
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            color: #333;
+            transition: border-color 0.2s ease-in-out;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default */
+            gap: 1rem; /* Gap between form fields */
+            margin-bottom: 1.5rem;
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem; /* More rounded for button */
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+            border: none;
+            cursor: pointer;
+            display: inline-block; /* Allow text-align to center it */
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 600px) { /* Small screens and up */
+            .contact-container {
+                padding: 0 2rem; /* More padding for larger screens */
+            }
+            .form-row {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for name/email */
+            }
+        }
+
+        @media (min-width: 768px) { /* Medium screens and up */
+            .main-content-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for main layout */
+            }
+            .form-card {
+                margin-top: 0; /* Remove top margin when in two columns */
+            }
+        }
+
+        @media (max-width: 767px) { /* Styles specifically for screens smaller than 768px */
+            .section-title {
+                font-size: 2rem;
+            }
+            .section-subtitle {
+                font-size: 1rem;
+            }
+            .info-card {
+                margin-bottom: 1rem;
+            }
+        }
+
      #home {
       background-image: url('assets/img/back.jpeg');
     }
@@ -391,7 +582,81 @@
 
 
 <!--section3 resume-->
-    <section id="resume" class="section3"></section>
+    <section class="resume-section" id="resume">
+        <div class="resume-container">
+            <!-- Header Section -->
+            <div class="header-section">
+                <h1 class="section-title">Resume</h1>
+                <p class="section-subtitle">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga quidem sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="main-content-grid">
+                <!-- Left Column: Summary & Education -->
+                <div>
+                    <h2 class="subsection-title">Summary</h2>
+                    <div class="text-content">
+                        <strong>BRANDON JOHNSON</strong><br>
+                        <em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em>
+                        <ul>
+                            <li>Portland par 127,Orlando, FL</li>
+                            <li>(123) 456-7891</li>
+                            <li>alice.barkley@example.com</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="subsection-title">Education</h2>
+                    <div class="experience-item">
+                        <h4>MASTER OF FINE ARTS & GRAPHIC DESIGN</h4>
+                        <p>2015 - 2016</p>
+                        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                        <div class="text-content">
+                            Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <h4>BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h4>
+                        <p>2010 - 2014</p>
+                        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                        <div class="text-content">
+                            Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etion sader mart dila
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Professional Experience -->
+                <div>
+                    <h2 class="subsection-title">Professional Experience</h2>
+                    <div class="experience-item">
+                        <h4>SENIOR GRAPHIC DESIGN SPECIALIST</h4>
+                        <p>2019 - Present</p>
+                        <p><em>Experion, New York, NY</em></p>
+                        <div class="text-content">
+                            <ul>
+                                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <h4>GRAPHIC DESIGN SPECIALIST</h4>
+                        <p>2017 - 2018</p>
+                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                        <div class="text-content">
+                            <ul>
+                                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <!--end of section3 resume-->
 
 
@@ -485,7 +750,7 @@
     <div class="button-container">
         <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
         <h4>
-            AI Enginnering
+            Web Designing
         </h4>
         <p>
             Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
@@ -513,7 +778,7 @@
     <div class="button-container">
         <img src="assets/img/icons8-android-os-48.png" alt="Web Development Icon" class="icon">
         <h4>
-            Unreal Engineering
+            Freelancer
         </h4>
         <p>
             Passionate Android app developer with a strong focus on creating intuitive, high-performance mobile
@@ -532,7 +797,86 @@
 
 
 <!--section5 contact-->
-    <section id="contact" class="section5"></section>
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <!-- Header Section -->
+            <div class="header-section">
+                <h1 class="section-title">Contact</h1>
+                <p class="section-subtitle">Necessitatibus eius consequatur ex aliquid fuga quidem sint consectetur velit</p>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="main-content-grid">
+                <!-- Left Column: Contact Info -->
+                <div>
+                    <!-- Address Card -->
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Address</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+
+                    <!-- Call Us Card -->
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Call me</h3>
+                            <p>+254 113 817103</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Us Card -->
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email </h3>
+                            <p>kephamirera@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- Map Container removed -->
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div>
+                    <div class="form-card">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="your-name">Your Name</label>
+                                    <input type="text" id="your-name" name="your-name" placeholder=" ">
+                                </div>
+                                <div class="form-group">
+                                    <label for="your-email">Your Email</label>
+                                    <input type="email" id="your-email" name="your-email" placeholder=" ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder=" ">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder=" "></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="submit-button">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Divider removed -->
+        </div>
+    </section>
 <!--end of section5 contact-->
 
 </main>
