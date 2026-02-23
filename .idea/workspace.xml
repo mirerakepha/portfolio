@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f8759b2-5086-4e64-a3b4-cb8e30b92a99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARES/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARES/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARES/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARES/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARES/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/sections.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/sections.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2x5qH3GLyUjkn2xd9J3FWyyJYso" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/strange/PycharmProjects/ARES&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Templates/assets" />
+      <recent name="$PROJECT_DIR$/static/assets/css" />
+      <recent name="$PROJECT_DIR$/Templates/assets/img" />
+      <recent name="$PROJECT_DIR$/static/assets/img" />
+      <recent name="$PROJECT_DIR$/static/static/img" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f8759b2-5086-4e64-a3b4-cb8e30b92a99" name="Changes" comment="" />
+      <created>1747238191470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747238191470</updated>
+      <workItem from="1747238192572" duration="1947000" />
+      <workItem from="1747242072643" duration="894000" />
+      <workItem from="1747243504177" duration="20000" />
+      <workItem from="1747244492334" duration="210000" />
+      <workItem from="1747244752089" duration="22000" />
+      <workItem from="1747244831033" duration="41000" />
+      <workItem from="1747244899352" duration="38000" />
+      <workItem from="1747244977371" duration="4673000" />
+      <workItem from="1747304788078" duration="7608000" />
+      <workItem from="1747468244193" duration="7419000" />
+      <workItem from="1747561169054" duration="26000" />
+      <workItem from="1748355146402" duration="154000" />
+      <workItem from="1748372164832" duration="5346000" />
+      <workItem from="1748377721427" duration="901000" />
+      <workItem from="1748430087210" duration="35000" />
+      <workItem from="1748498571655" duration="368000" />
+      <workItem from="1748541691096" duration="11386000" />
+      <workItem from="1748599663203" duration="3395000" />
+      <workItem from="1748964194861" duration="4846000" />
+      <workItem from="1749031249868" duration="5000" />
+      <workItem from="1757899155654" duration="297000" />
+      <workItem from="1757899468515" duration="461000" />
+      <workItem from="1757902040731" duration="3275000" />
+      <workItem from="1766946754660" duration="1906000" />
+      <workItem from="1766996743468" duration="13000" />
+      <workItem from="1766996934040" duration="188000" />
+      <workItem from="1771865196880" duration="3938000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ARES$manage.coverage" NAME="manage Coverage Results" MODIFIED="1747239222302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
